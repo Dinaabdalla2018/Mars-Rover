@@ -13,9 +13,9 @@ broken into each individual command and that command then executed. The valid co
 * R -> Rotate right by 90 degrees <br />
 
  class Direction : Contain 4 (WEST,EAST,NORTH,SOUTH)<br />
- classPostion   : Contain what is the postion when move Forward&Backward , Rotate Left,Right<br />
- classGlobe     : Rover move in the specific space<br />
- classRover     : Process of moving Rover<br />
+ class Postion   : Contain what is the postion when move Forward&Backward , Rotate Left,Right<br />
+ class Globe     : Rover move in the specific space<br />
+ class Rover     : Process of moving Rover<br />
 
 INPUT:
 The first line of input is the coordinates for grid example [5,5].<br />
