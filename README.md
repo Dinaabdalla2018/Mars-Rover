@@ -10,30 +10,28 @@ broken into each individual command and that command then executed. The valid co
 * F -> Move forward on current heading
 * B -> Move backwards on current heading
 * L -> Rotate left by 90 degrees
-* R -> Rotate right by 90 degrees
+* R -> Rotate right by 90 degrees <br />
 
-- Direction : Contain 4 (WEST,EAST,NORTH,SOUTH)
-- Postion   : Contain what is the postion when move Forward&Backward , Rotate Left,Right
-- Globe     : Rover move in the specific space
-- Rover     : Process of moving Rover
+ class Direction : Contain 4 (WEST,EAST,NORTH,SOUTH)<br />
+ classPostion   : Contain what is the postion when move Forward&Backward , Rotate Left,Right<br />
+ classGlobe     : Rover move in the specific space<br />
+ classRover     : Process of moving Rover<br />
 
 INPUT:
-The first line of input is the coordinates for grid example [5,5].
+The first line of input is the coordinates for grid example [5,5].<br />
+The rest of the input is the rovers's position.<br />
+The position is made up of two integers and a letter separated by spaces, corresponding to the x and y co-ordinates and the rover's direction.<br />
 
-The rest of the input is the rovers's position.
+OUTPUT<br />
+The output for each rover should be its final co-ordinates and direction.<br />
 
-The position is made up of two integers and a letter separated by spaces, corresponding to the x and y co-ordinates and the rover's direction.
+Test Input:<br />
+5 5<br />
+1 2 N<br />
+LFLFLFLFF<br />
 
-OUTPUT
-The output for each rover should be its final co-ordinates and direction.
-
-Test Input:
-5 5
-1 2 N
-LFLFLFLFF
-
-Expected Output:
-1 3 N
+Expected Output:<br />
+1 3 N<br />
 
 # Testing
 test each file in folder test using junit 3.7 
