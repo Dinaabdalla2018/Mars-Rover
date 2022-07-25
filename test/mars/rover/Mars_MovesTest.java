@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  *
- * @author hp
+ * @author Dina Abdallah
  */
 public class Mars_MovesTest {
     
