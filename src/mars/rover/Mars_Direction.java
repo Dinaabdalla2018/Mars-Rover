@@ -16,11 +16,11 @@ public enum Mars_Direction {
     NORTH {
         @Override
         Mars_Coordinates Forward(Mars_Globe globe, Mars_Coordinates mars_coordinates) {
-            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY() + 1) % globe.getHeight());
+            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY() + 1));
         }
         @Override
         Mars_Coordinates Backward(Mars_Globe globe, Mars_Coordinates mars_coordinates) {
-            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY() + globe.getHeight() - 1) % globe.getHeight());
+            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY()  - 1));
         }
     },  EAST {
         @Override
@@ -29,26 +29,26 @@ public enum Mars_Direction {
         }
         @Override
         Mars_Coordinates Backward(Mars_Globe globe, Mars_Coordinates mars_coordinates) {
-            return Mars_Coordinates.of((mars_coordinates.getX() + globe.getWidth() - 1) % globe.getWidth(), mars_coordinates.getY());
+            return Mars_Coordinates.of((mars_coordinates.getX() - 1), mars_coordinates.getY());
         }
     
     }, WEST {
         @Override
         Mars_Coordinates Forward(Mars_Globe globe, Mars_Coordinates mars_coordinates) {
-            return Mars_Coordinates.of((mars_coordinates.getX() + globe.getWidth() - 1) % globe.getWidth(), mars_coordinates.getY());
+            return Mars_Coordinates.of((mars_coordinates.getX() - 1), mars_coordinates.getY());
         }
         Mars_Coordinates Backward(Mars_Globe globe, Mars_Coordinates mars_coordinates) {
-            return Mars_Coordinates.of((mars_coordinates.getX() + 1) % globe.getWidth(), mars_coordinates.getY());
+            return Mars_Coordinates.of((mars_coordinates.getX() + 1) , mars_coordinates.getY());
         }
     },
     SOUTH {
         @Override
         Mars_Coordinates Forward(Mars_Globe globe, Mars_Coordinates mars_coordinates) {
-            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY() + globe.getHeight() - 1) % globe.getHeight());
+            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY()  - 1));
         }  
         @Override
         Mars_Coordinates Backward(Mars_Globe globe, Mars_Coordinates mars_coordinates) {
-            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY() + 1) % globe.getHeight());
+            return Mars_Coordinates.of(mars_coordinates.getX(), (mars_coordinates.getY() + 1) );
         }    
     };
 
