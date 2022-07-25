@@ -24,13 +24,13 @@ The output for each rover should be its final co-ordinates and direction.<br />
 
 Test Input:<br />
 ```
- 5 5<br />
- 1 2 N<br />
- LFLFLFLFF<br />
+ 5 5
+ 1 2 N
+ LFLFLFLFF
 ```
 Expected Output:<br />
 ```
-1 3 N<br />
+1 3 N
 ```
 
 > Mars_Direction: Contain moves in 4 (WEST,EAST,NORTH,SOUTH)<br />
@@ -42,6 +42,6 @@ Mars_Moves: Rover's move (forword, backword, Left, Right) <br />
 
 # Testing
 2 file is test moves and direction<br/>
-library**</br>
+**library**</br>
 junit 4.12 
 assertj-core 3.5.2
