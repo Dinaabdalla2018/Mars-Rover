@@ -46,4 +46,4 @@ Mars_Moves: Rover's move (forword, backword, Left, Right) <br />
 junit 4.12 </br>
 assertj-core 3.5.2
 
-> using NetBeans After install library can test files:Mars_Direction_test, Mars_Moves_test
+> using NetBeans After install library can test files:Mars_DirectionTest, Mars_MovesTest
