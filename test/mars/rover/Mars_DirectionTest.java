@@ -83,7 +83,7 @@ public class Mars_DirectionTest {
     @Test
     public void execute_move_forward_to_west_reaching_edge() {
         Mars_Coordinates coordinates = Mars_Direction.WEST.Forward(Mars_Globe.of(3, 3), Mars_Coordinates.of(0, 1));
-        assertThat(coordinates).isEqualToComparingFieldByFieldRecursively(Mars_Coordinates.of(2, 1));
+        assertThat(coordinates).isEqualToComparingFieldByFieldRecursively(Mars_Coordinates.of(-1, 1));
     }
     
     @Test
@@ -95,7 +95,7 @@ public class Mars_DirectionTest {
     @Test
     public void execute_move_forward_to_north_reaching_edge() {
         Mars_Coordinates coordinates = Mars_Direction.NORTH.Forward(Mars_Globe.of(3, 3), Mars_Coordinates.of(2, 2));
-        assertThat(coordinates).isEqualToComparingFieldByFieldRecursively(Mars_Coordinates.of(2, 0));
+        assertThat(coordinates).isEqualToComparingFieldByFieldRecursively(Mars_Coordinates.of(2, 3));
     }
     
     @Test
@@ -108,7 +108,7 @@ public class Mars_DirectionTest {
     @Test
     public void execute_move_forward_to_south_reaching_edge() {
         Mars_Coordinates coordinates = Mars_Direction.SOUTH.Forward(Mars_Globe.of(3, 3), Mars_Coordinates.of(2, 0));
-        assertThat(coordinates).isEqualToComparingFieldByFieldRecursively(Mars_Coordinates.of(2, 2));
+        assertThat(coordinates).isEqualToComparingFieldByFieldRecursively(Mars_Coordinates.of(2, -1));
     }
 
     @Test
